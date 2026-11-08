@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Fictitious sample: standard VAT invoice, bank transfer, not paid yet -->
+<Faktura xmlns="http://crd.gov.pl/wzor/2025/06/25/13775/">
+  <Naglowek>
+    <KodFormularza kodSystemowy="FA (3)" wersjaSchemy="1-0E">FA</KodFormularza>
+    <WariantFormularza>3</WariantFormularza>
+    <DataWytworzeniaFa>2026-11-03T09:15:00Z</DataWytworzeniaFa>
+  </Naglowek>
+  <Podmiot1>
+    <DaneIdentyfikacyjne><NIP>1111111111</NIP><Nazwa>Example Supplier Sp. z o.o.</Nazwa></DaneIdentyfikacyjne>
+    <Adres><KodKraju>PL</KodKraju><AdresL1>ul. Przykładowa 1, 00-001 Warszawa</AdresL1></Adres>
+  </Podmiot1>
+  <Podmiot2>
+    <DaneIdentyfikacyjne><NIP>9999999999</NIP><Nazwa>Example Buyer S.A.</Nazwa></DaneIdentyfikacyjne>
+  </Podmiot2>
+  <Fa>
+    <KodWaluty>PLN</KodWaluty>
+    <P_1>2026-11-03</P_1>
+    <P_2>FV/11/0042/2026</P_2>
+    <P_6>2026-10-31</P_6>
+    <P_13_1>1000.00</P_13_1><P_14_1>230.00</P_14_1>
+    <P_13_2>100.00</P_13_2><P_14_2>8.00</P_14_2>
+    <P_15>1338.00</P_15>
+    <RodzajFaktury>VAT</RodzajFaktury>
+    <Platnosc>
+      <TerminPlatnosci><Termin>2026-11-17</Termin></TerminPlatnosci>
+      <FormaPlatnosci>6</FormaPlatnosci>
+      <RachunekBankowy><NrRB>12 1050 0000 1234 5678 9012 3456</NrRB></RachunekBankowy>
+    </Platnosc>
+  </Fa>
+</Faktura>

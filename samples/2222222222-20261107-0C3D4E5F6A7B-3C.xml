@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Fictitious sample: EUR invoice for a service period, partially paid, foreign IBAN -->
+<Faktura xmlns="http://crd.gov.pl/wzor/2025/06/25/13775/">
+  <Naglowek>
+    <KodFormularza kodSystemowy="FA (3)" wersjaSchemy="1-0E">FA</KodFormularza>
+    <WariantFormularza>3</WariantFormularza>
+    <DataWytworzeniaFa>2026-11-07T08:00:00Z</DataWytworzeniaFa>
+  </Naglowek>
+  <Podmiot1>
+    <DaneIdentyfikacyjne><NIP>2222222222</NIP><Nazwa>Example Services S.A.</Nazwa></DaneIdentyfikacyjne>
+  </Podmiot1>
+  <Podmiot2>
+    <DaneIdentyfikacyjne><NIP>9999999999</NIP><Nazwa>Example Buyer S.A.</Nazwa></DaneIdentyfikacyjne>
+  </Podmiot2>
+  <Fa>
+    <KodWaluty>EUR</KodWaluty>
+    <P_1>2026-11-07</P_1>
+    <P_2>2026/EU/77</P_2>
+    <OkresFa><P_6_Od>2026-10-01</P_6_Od><P_6_Do>2026-10-31</P_6_Do></OkresFa>
+    <P_13_1>500.00</P_13_1><P_14_1>115.00</P_14_1><P_14_1W>490.13</P_14_1W>
+    <P_13_10>200.00</P_13_10>
+    <P_15>815.00</P_15>
+    <RodzajFaktury>VAT</RodzajFaktury>
+    <Platnosc>
+      <ZnacznikZaplatyCzesciowej>1</ZnacznikZaplatyCzesciowej>
+      <ZaplataCzesciowa><KwotaZaplatyCzesciowej>300.00</KwotaZaplatyCzesciowej><DataZaplatyCzesciowej>2026-11-10</DataZaplatyCzesciowej></ZaplataCzesciowa>
+      <TerminPlatnosci><Termin>2026-11-21</Termin></TerminPlatnosci>
+      <FormaPlatnosci>6</FormaPlatnosci>
+      <RachunekBankowy><NrRB>DE89 3704 0044 0532 0130 00</NrRB></RachunekBankowy>
+    </Platnosc>
+  </Fa>
+</Faktura>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Fictitious sample: correction invoice settled by offset (kompensata) -->
+<Faktura xmlns="http://crd.gov.pl/wzor/2025/06/25/13775/">
+  <Naglowek>
+    <KodFormularza kodSystemowy="FA (3)" wersjaSchemy="1-0E">FA</KodFormularza>
+    <WariantFormularza>3</WariantFormularza>
+    <DataWytworzeniaFa>2026-11-06T12:00:00Z</DataWytworzeniaFa>
+  </Naglowek>
+  <Podmiot1>
+    <DaneIdentyfikacyjne><NIP>1111111111</NIP><Nazwa>Example Supplier Sp. z o.o.</Nazwa></DaneIdentyfikacyjne>
+  </Podmiot1>
+  <Podmiot2>
+    <DaneIdentyfikacyjne><NIP>9999999999</NIP><Nazwa>Example Buyer S.A.</Nazwa></DaneIdentyfikacyjne>
+  </Podmiot2>
+  <Fa>
+    <KodWaluty>PLN</KodWaluty>
+    <P_1>2026-11-06</P_1>
+    <P_2>KOR/11/0003/2026</P_2>
+    <P_13_1>-100.00</P_13_1><P_14_1>-23.00</P_14_1>
+    <P_15>-123.00</P_15>
+    <RodzajFaktury>KOR</RodzajFaktury>
+    <PrzyczynaKorekty>Rabat posprzedażowy</PrzyczynaKorekty>
+    <TypKorekty>2</TypKorekty>
+    <DaneFaKorygowanej>
+      <DataWystFaKorygowanej>2026-11-03</DataWystFaKorygowanej>
+      <NrFaKorygowanej>FV/11/0042/2026</NrFaKorygowanej>
+      <NrKSeF>1</NrKSeF>
+      <NrKSeFFaKorygowanej>1111111111-20261103-0A1B2C3D4E5F-1A</NrKSeFFaKorygowanej>
+    </DaneFaKorygowanej>
+    <Platnosc>
+      <TerminPlatnosci><TerminOpis><Ilosc>14</Ilosc><Jednostka>dni</Jednostka><ZdarzeniePoczatkowe>od doręczenia</ZdarzeniePoczatkowe></TerminOpis></TerminPlatnosci>
+      <PlatnoscInna>1</PlatnoscInna>
+      <OpisPlatnosci>Kompensata</OpisPlatnosci>
+    </Platnosc>
+  </Fa>
+</Faktura>
